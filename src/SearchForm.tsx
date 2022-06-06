@@ -17,11 +17,13 @@ const SearchForm: FunctionComponent = () => {
           matchingSpecialists.push(specialistsList[i]);
         }
       } else if (specialization === "") {
-        if (specialistsList[i].location === location) {
+        if (
+          specialistsList[i].location.toUpperCase() === location.toUpperCase()
+        ) {
           matchingSpecialists.push(specialistsList[i]);
         }
       } else if (
-        specialistsList[i].location === location &&
+        specialistsList[i].location.toUpperCase() === location.toUpperCase() &&
         specialistsList[i].specialization === specialization
       ) {
         matchingSpecialists.push(specialistsList[i]);
@@ -32,7 +34,9 @@ const SearchForm: FunctionComponent = () => {
 
   return (
     <div>
-      <h2>Find a specialist and make an appointment in just few steps</h2>
+      <h2 className="short-desc">
+        Find specialists and make appointments in few easy steps
+      </h2>
       <div>
         <form
           onSubmit={(e) => {
@@ -67,7 +71,7 @@ const SearchForm: FunctionComponent = () => {
             value={location}
             onChange={(e) => setLocation(e.target.value)}
           />
-          <button>
+          <button className="btn-search" type="submit">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

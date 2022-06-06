@@ -45,8 +45,6 @@ const Header: FunctionComponent = () => {
           </li>
         </ul>
       </nav>
-      {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-      <a href="#main-menu-toggle" className="backdrop" hidden></a>
     </header>
   );
 };
