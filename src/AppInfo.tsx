@@ -2,8 +2,8 @@ import { FunctionComponent } from "react";
 
 const AppInfo: FunctionComponent = () => {
   return (
-    <section>
-      <div>
+    <article className="app-info">
+      <section>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -17,8 +17,8 @@ const AppInfo: FunctionComponent = () => {
         </svg>
         <h3>Find a specialist</h3>
         <p>Search among dozens of the greatest medical specialists.</p>
-      </div>
-      <div>
+      </section>
+      <section>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -32,8 +32,8 @@ const AppInfo: FunctionComponent = () => {
         </svg>
         <h3>Easy to appoint</h3>
         <p>You can make appointments in just few steps.</p>
-      </div>
-      <div>
+      </section>
+      <section>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -47,8 +47,8 @@ const AppInfo: FunctionComponent = () => {
         </svg>
         <h3>Reminder</h3>
         <p>We will remind you about your appointment by e-mail.</p>
-      </div>
-      <div>
+      </section>
+      <section>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -62,8 +62,8 @@ const AppInfo: FunctionComponent = () => {
         </svg>
         <h3>Free services</h3>
         <p>Making appointments with us is completely free.</p>
-      </div>
-    </section>
+      </section>
+    </article>
   );
 };
 
