@@ -45,6 +45,9 @@ const Header: FunctionComponent = () => {
           </li>
         </ul>
       </nav>
+      <a href="#top" className="backdrop" hidden>
+        {" "}
+      </a>
     </header>
   );
 };
